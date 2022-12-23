@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #99D1EA;
+    animation: random 30s infinite;
+}
+
+@keyframes random {
+    15% {
+        background-color: rgb(181, 39, 233);
+    }
+
+    30% {
+        background-color: rgb(57, 183, 246);
+    }
+
+    45% {
+        background-color: rgb(138, 247, 138);
+    }
+
+    60% {
+        background-color: rgb(152, 152, 247);
+    }
+
+    75% {
+        background-color: white;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(222, 224, 68);
+    text-shadow: 1px salmon;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+.logo {
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 4px 3px 0px rgb(255, 191, 0), 9px 8px 0px rgba(44, 41, 41, 0.15);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+.about-container img {
+    width: 100%;
+}
+
+.about-container p {
+    font-size: 2rem;
+}
+
+.about-container h3 {
+    font-size: 3rem;
+}
+
+.about-bio {
+    width: 100%;
+}
+
+.index-main-grid {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mund jesus wecker"
+        "klingel jesus toaster"
+        "wurm jesus mund2";
+}
+
+.jesus {
+    grid-area: jesus;
+}
+
+.mund {
+    grid-area: mund;
+}
+
+.klingel {
+    grid-area: klingel;
+}
+
+.wurm {
+    grid-area: wurm;
+}
+
+.wecker {
+    grid-area: wecker;
+}
+
+.toaster {
+    grid-area: toaster;
+}
+
+.mund2 {
+    grid-area: mund2;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
